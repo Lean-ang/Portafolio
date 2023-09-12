@@ -1,0 +1,12 @@
+p {
+    color:rgb(0, 255, 128)
+}
+
+input {
+    display: block;
+    margin-bottom: 15px;
+}
+
+form {
+    margin: 15px 30px;
+}

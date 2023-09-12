@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="js/popper.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="css/sweetalert2.min.css">
+
+    <title>Sonar</title>
+    
+</head>
+
+<body>
+ <!--Navbar-->
+ <header class="header">
+    <div>
+      <img src="Iconos/img-sonar.ico" alt="icono logo" width="80px">
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="contacto.html">Contacto</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="media.html">Media</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Equipamiento
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="sonido.html">Sonido</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Iluminacion</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+
+
+    <main>
+        <div class="container form-container">
+            <div class="row mt-3">
+                <div class="col">
+                    <h2 class="d-flex justify-content-center mb-3 txt">Realizar Alquiler</h2>
+                    <form id="procesar-pago " action="#">
+                        <div class="form-group row">
+                            <label for="cliente" class="col-12 col-md-2 col-form-label h2 txt">Cliente :</label>
+                            <div class="col-12 col-md-10">
+                                <input type="text" class="form-control" id="cliente"
+                                    placeholder="Ingresa tu nombre">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="email" class="col-12 col-md-2 col-form-label h2 txt">Correo :</label>
+                            <div class="col-12 col-md-10">
+                                <input type="text" class="form-control" id="correo" placeholder="Ingresa tu correo">
+                            </div>
+                        </div>
+
+                        <div id="carrito" class="table-responsive">
+                            <table class="table txt" id="lista-compra">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Imagen</th>
+                                        <th scope="col">Nombre</th>
+                                        <th scope="col">Precio</th>
+                                        <th scope="col">Cantidad</th>
+                                        <th scope="col">Eliminar</th>
+                                    </tr>
+
+                                </thead>
+                                <tbody>
+                                </tbody>
+                                <tr>
+                                    <th colspan="4" scope="col" class="text-right txt">TOTAL :</th>
+                                    <th scope="col">
+                                        <p id="total"></p>
+                                    </th>
+                                    <!-- <th scope="col"></th> -->
+                                </tr>
+
+                            </table>
+                        </div>
+
+                        <div class="row justify-content-between">
+                            <div class="col-md-4 mb-2">
+                                <a href="index.html" class="btn btn-info btn-block txt">Seguir Buscando</a>
+                            </div>
+                            <div class="col-xs-12 col-md-4">
+                                <a href="#" class="btn btn-success btn-block txt" id="procesar-compra">Realizar Alquiler</a>
+                            </div>
+                        </div>
+                    </form>
+
+
+                </div>
+
+
+            </div>
+
+        </div>
+    </main>
+
+
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/sweetalert2.min.js"></script>
+    <script src="js/carrito.js"></script>
+    <script src="js/compra.js"></script>
+    <script src="js/var-lis.js"></script>
+
+</body>
+
+</html>

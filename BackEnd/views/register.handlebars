@@ -1,0 +1,19 @@
+<h1>register</h1>
+<form action="" id="formRegister">
+  <label for="inputFirstName">Nombre</label> <input id="inputFirstName" type="text"
+    placeholder="Nombre" required><br>
+  <label for="inputLastName">Apellido</label> <input id="inputLastName" type="text" placeholder="Apellido" required><br>
+  <label for="inputEmail">Email</label> <input id="inputEmail" type="email" placeholder="Mail" required><br>
+  <label for="inputAge">Edad</label> <input id="inputAge" type="number" placeholder="Edad" required><br>
+  <label for="inputPassword">Contraseña</label> <input id="inputPassword" type="password" placeholder="Contraseña" required><br>
+  <label for="inputRol">Rol</label> <input id="inputRol" type="text" placeholder="Rol" list="roles" value="User" ><br>
+      <datalist id="roles">
+        <option value="Admin">
+        <option value="User">
+        <option value="Developer">
+      </datalist>
+  <br>
+  <button type="submit">Enviar</button>
+</form>
+
+<script src="/js/register.js"></script>

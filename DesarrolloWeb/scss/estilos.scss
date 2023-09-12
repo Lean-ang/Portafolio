@@ -1,0 +1,245 @@
+//imports========================//
+@import "fonts";
+@import "color";
+//VARIABLES====================================//
+@mixin iluminacion-img {
+    border-radius: 20px;
+    background-color: $color-negro;
+}
+@mixin form-contenido {
+    background: $color-negro;
+    color: $color-blanco;
+    font-family: $font-principal;
+    padding: 0 1.5em;
+    border-radius: 20px; 
+}
+@font-face {
+    font-family: 'FontAwesome';
+    src: url('../fonts/fontawesome-webfont.eot?v=4.7.0');
+    src: url('../fonts/fontawesome-webfont.eot?#iefix&v=4.7.0') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff2?v=4.7.0') format('woff2'), url('../fonts/fontawesome-webfont.woff?v=4.7.0') format('woff'), url('../fonts/fontawesome-webfont.ttf?v=4.7.0') format('truetype'), url('../fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg');
+    font-weight: normal;
+    font-style: normal;}
+/*FONTS*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500;800&display=swap'); /*font-family: 'Roboto Slab', serif; */
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Roboto+Slab:wght@500;800&display=swap'); /*font-family: 'Anton', sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Yaldevi&display=swap'); /*font-family: 'Yaldevi', sans-serif; */
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body {
+    background-image: url(../assets/backgrounds/fondo2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+    flex-wrap: wrap;
+}
+/* footer===================================*/
+footer{
+    padding: 15px;
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, 
+    rgba(255,255,255,0.196516106442577) 27%,
+    rgba(0,0,0,0.4009978991596639) 57%,
+    rgba(0,0,0,0.4009978991596639) 100%,
+    rgba(0,0,0,0.40379901960784315) 100%);
+    position: relative;
+}
+  footer ul {
+    color: white;
+    display: flex;
+    justify-content:flex-end;
+    list-style: none; 
+  }
+  footer ul li{
+    padding-left: 20px;
+    position: relative;
+  }
+  footer ul li:hover{
+    cursor: pointer;
+    color: $color-azulclaro
+  }
+  .iconfb{
+    padding-right: 20px;
+}
+
+   
+/* Index Grid Bootstrap =============================*/
+.titulos-index {
+    font-family:$font-principal;
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    border-bottom: rgb(255, 255, 255) solid 2px;
+    border-radius: 20px;
+  }
+  .video-index {
+    margin-top: 60px;
+  }
+  .ubicacion-index{
+    @extend .video-index;
+   
+  }
+  .grid-container{
+   padding: 60px; 
+  }
+  //index Responsive Bootstrap=====================//
+  @media (max-width:768px){
+    .video-index{
+        margin-top:5px
+    }
+    .grid-container{
+        padding:0px;
+    }
+
+  }
+/*Barra de navegacion Bootstrap=============================*/
+header{ 
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+    padding: .5rem 2rem;
+    text-decoration:none;
+    font-size: 20px;
+    background: $color-blanco;
+    background: linear-gradient(180deg, 
+    rgba(255,255,255,0.196516106442577) 27%,
+    rgba(0,0,0,0.4009978991596639) 57%, 
+    rgba(0,0,0,0.4009978991596639) 100%, 
+    rgba(0,0,0,0.40379901960784315) 100%);
+}
+
+/*FORMULARIO DE CONTACTO BootStrap===================================*/
+.formulario{
+    @include form-contenido;
+
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.5em;  
+    
+    box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.301);
+    border-radius: 20px;
+
+    background-color: $color-negro;
+    border-radius: 20px;
+}
+
+.btn{
+    background-color: $color-azul;
+    border-radius: 20px;
+    border: 0;
+    text-transform: uppercase;
+    padding: 1em;
+    cursor: pointer;
+    font-family: $font-principal;
+    width: 100%;
+}
+/*color boton gradiente*/
+.btn:hover{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(6,5,79,1) 15%, rgba(255,0,0,1) 52%, rgba(9,9,121,1) 85%); 
+   
+}
+
+.img-contacto{
+    color: $color-blanco;
+    border-radius: 20px;
+    background-image: url(../assets/backgrounds/fondo3.jpg);
+    background-size: cover;  
+    height: 500px;
+    margin-left: 0.5px;
+}
+@media(max-width:768px){
+    .img-contacto{
+        margin-left:1px;
+       
+    }  
+}
+
+.icono-perfil{
+    display: flex;
+    justify-content: center; 
+    text-align: center;
+    margin-bottom: 1em;  
+    font-size: 30px;  
+    margin-top: 20px;
+}
+.txt-contacto{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 10px;
+    font-family:$font-principal;
+}
+
+.titulo-contacto{
+    @extend .titulos-index;
+    text-align: center;
+    
+}
+.icono-tel{
+    margin-top: 140px;
+    text-decoration: none;
+    list-style-type: none;
+}
+.icono-email{
+    text-decoration: none;
+    list-style-type: none;
+}
+
+
+
+/*carrusel====================================*/
+.carrusel{
+    width: 29%;   
+}
+.flex-carrusel{
+    display: flex;
+    justify-content: center;
+}
+.carousel-inner{
+    border: solid rgb(0, 0, 0) 1px;
+    border-radius: 20px;
+}
+.carousel-indicators{
+  margin-bottom: 40px;
+}
+.carousel-control-prev{
+    margin-bottom: 80px;
+}
+.carousel-control-next{
+    @extend .carousel-control-prev;
+}
+/*carrusel responsive================================*/
+@media (max-width: 768px){
+
+    .carrusel{
+        width:100%;
+    }
+    .carousel-inner{
+        border: solid rgb(0, 0, 0) 1px;
+        border-radius: 20px;
+    }   
+}
+
+//========texto iluminacion-sonido========//
+.txt{
+    color: $color-blanco;
+}
+
+//======fondo sonido=======//
+.fondo-img{
+    @include iluminacion-img;
+}
+/*fondo iluminacion====================*/
+.iluminacion-fondo{
+    @include iluminacion-img;
+}

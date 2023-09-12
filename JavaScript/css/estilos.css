@@ -1,0 +1,255 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Roboto+Slab:wght@500;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Yaldevi&display=swap");
+@font-face {
+  font-family: "FontAwesome";
+  src: url("../fonts/fontawesome-webfont.eot?v=4.7.0");
+  src: url("../fonts/fontawesome-webfont.eot?#iefix&v=4.7.0") format("embedded-opentype"), url("../fonts/fontawesome-webfont.woff2?v=4.7.0") format("woff2"), url("../fonts/fontawesome-webfont.woff?v=4.7.0") format("woff"), url("../fonts/fontawesome-webfont.ttf?v=4.7.0") format("truetype"), url("../fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+/*FONTS*/
+/*font-family: 'Roboto Slab', serif; */
+/*font-family: 'Anton', sans-serif;*/
+/*font-family: 'Yaldevi', sans-serif; */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+body {
+  background-image: url(../backgrounds/fondo2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+  flex-wrap: wrap;
+}
+
+/* footer===================================*/
+footer {
+  padding: 15px;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.1965161064) 27%, rgba(0, 0, 0, 0.4009978992) 57%, rgba(0, 0, 0, 0.4009978992) 100%, rgba(0, 0, 0, 0.4037990196) 100%);
+  position: relative;
+}
+
+footer ul {
+  color: white;
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+}
+
+footer ul li {
+  padding-left: 20px;
+  position: relative;
+}
+
+footer ul li:hover {
+  cursor: pointer;
+  color: rgb(0, 61, 255);
+}
+
+.iconfb {
+  padding-right: 20px;
+}
+
+/* Index Grid Bootstrap =============================*/
+.titulos-index, .titulo-contacto {
+  font-family: "Yaldevi";
+  font-size: 30px;
+  color: rgb(255, 255, 255);
+  border-bottom: rgb(255, 255, 255) solid 2px;
+  border-radius: 20px;
+}
+
+.video-index, .ubicacion-index {
+  margin-top: 60px;
+}
+
+.grid-container {
+  padding: 60px;
+}
+
+@media (max-width: 768px) {
+  .video-index, .ubicacion-index {
+    margin-top: 5px;
+  }
+  .grid-container {
+    padding: 0px;
+  }
+}
+/*Barra de navegacion Bootstrap=============================*/
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 2rem;
+  text-decoration: none;
+  font-size: 20px;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.1965161064) 27%, rgba(0, 0, 0, 0.4009978992) 57%, rgba(0, 0, 0, 0.4009978992) 100%, rgba(0, 0, 0, 0.4037990196) 100%);
+}
+
+/*FORMULARIO DE CONTACTO BootStrap===================================*/
+.formulario {
+  background: rgba(0, 0, 0, 0.507);
+  color: rgb(255, 255, 255);
+  font-family: "Yaldevi";
+  padding: 0 1.5em;
+  border-radius: 20px;
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1.5em;
+  box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.301);
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.507);
+  border-radius: 20px;
+}
+
+.btn {
+  background-color: #1100ff;
+  border-radius: 20px;
+  border: 0;
+  text-transform: uppercase;
+  padding: 1em;
+  cursor: pointer;
+  font-family: "Yaldevi";
+  width: 100%;
+}
+
+/*color boton gradiente*/
+.btn:hover {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(90deg, rgb(2, 0, 36) 0%, rgb(6, 5, 79) 15%, rgb(255, 0, 0) 52%, rgb(9, 9, 121) 85%);
+}
+
+.img-contacto {
+  color: rgb(255, 255, 255);
+  border-radius: 20px;
+  background-image: url(../backgrounds/fondo3.jpg);
+  background-size: cover;
+  height: 500px;
+  margin-left: 0.5px;
+}
+
+@media (max-width: 768px) {
+  .img-contacto {
+    margin-left: 1px;
+  }
+}
+.icono-perfil {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 1em;
+  font-size: 30px;
+  margin-top: 20px;
+}
+
+.txt-contacto {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 10px;
+  font-family: "Yaldevi";
+}
+
+.titulo-contacto {
+  text-align: center;
+}
+
+.icono-tel {
+  margin-top: 140px;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.icono-email {
+  text-decoration: none;
+  list-style-type: none;
+}
+
+/*carrusel====================================*/
+.carrusel {
+  width: 29%;
+}
+
+.flex-carrusel {
+  display: flex;
+  justify-content: center;
+}
+
+.carousel-inner {
+  border: solid rgb(0, 0, 0) 1px;
+  border-radius: 20px;
+}
+
+.carousel-indicators {
+  margin-bottom: 40px;
+}
+
+.carousel-control-prev, .carousel-control-next {
+  margin-bottom: 80px;
+}
+
+/*carrusel responsive================================*/
+@media (max-width: 768px) {
+  .carrusel {
+    width: 100%;
+  }
+  .carousel-inner {
+    border: solid rgb(0, 0, 0) 1px;
+    border-radius: 20px;
+  }
+}
+.txt {
+  color: rgb(255, 255, 255);
+}
+
+.fondo-img {
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.507);
+}
+
+/*fondo iluminacion====================*/
+.iluminacion-fondo {
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.507);
+}/*# sourceMappingURL=estilos.css.map */
+
+
+
+.card-body{
+  width: 300px;
+}
+.card-header{
+  color: white;
+  width: 300px;
+}
+.card{
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.514);
+  width: 300px;
+}
+.card-deck{
+  display: flex;
+  justify-content: space-around;
+}
+.precio{
+  color: white;
+}
+
+.form-container{
+  display: flex;
+  justify-content: center; 
+  margin-top: 200px;
+  background-color: rgba(0, 0, 0, 0.466);
+}

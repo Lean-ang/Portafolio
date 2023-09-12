@@ -1,0 +1,12 @@
+<h1>Reestablecer contraseña</h1>
+<form action="" id="formLogin">
+  <label for="labelReestablecerEmail">Email</label> <input id="inputReestablecerEmail" type="email" value="{{usuario}}" disabled><br>
+  <label for="labelReestablecerName">Nombre</label> <input id="inputReestablecerName" type="text" placeholder="Name" required><br>
+  <label for="labelReestablecerLastName">Apellido</label> <input id="inputReestablecerLastName" type="text" placeholder="Last name" required><br>
+  <label for="labelReestablecerPassword">Contraseña nueva</label> <input id="inputReestablecerPassword" type="password" placeholder="New pssword" minlength="5" required><br>
+  <label for="labelReestablecerPasswordConfirm">Repetir contraseña</label> <input id="inputReestablecerPasswordConfirm" type="password" placeholder="Repeat password" minlength="5" required><br>
+  <button type="submit" id="btnReestablecerSubmit">Reestablecer</button>
+</form>
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="/js/reestablecer.js"></script>

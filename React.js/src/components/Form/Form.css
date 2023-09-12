@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,300&display=swap');
+#form{
+   padding: 20px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.inputForm{
+    font-family: 'Roboto Mono', monospace;
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;   
+}
+.formControl{
+    display: flex;
+    font-family: 'Roboto Mono', monospace;
+    
+}

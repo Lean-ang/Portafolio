@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital@1&family=Yaldevi&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Roboto+Mono:ital@1&family=Yaldevi&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Coda+Caption&display=swap');
+/*font-family: 'Roboto Mono', monospace;*/
+/*font-family: 'Noto Sans', sans-serif;*/
+/*font-family: 'Coda Caption', sans-serif;*/
+
+.brand{
+   
+   font-size: large;
+   font-family: 'Coda Caption', sans-serif;
+}
+
+.botones{
+   display: flex;
+   justify-content:center;
+   text-align: center;
+   margin-left: 60px;
+   font-size: 20px;
+   
+}
