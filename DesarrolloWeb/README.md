@@ -1,4 +1,4 @@
-# Projecto Desarrollo Web
+# Proyecto Desarrollo Web
 
 La arquitectura base de este proyecto fue construida en **HTML5** junto con **CSS3**.
 
